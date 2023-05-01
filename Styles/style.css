@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: aquamarine;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+    border-bottom-right-radius: 25em;
+}
+
+.menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand {
+    margin-top: -7px;
+    font-size: 1.2em;
+    
+}
+
+.brand a {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.brand span {
+    color: aqua;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: .7rem;
+    transition: ease-in 0.4s;
+}
+
+.menu .active {
+    color: aqua;
+}
+
+.menu a:hover {
+    background-color: aqua;
+    color: #000;
+    font-weight: bold;
+    transition: ease-in 0.4s;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+  
+nav ul li:hover > ul {
+    display: block;
+}
+  
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #191c32;
+    padding: 0; 
+}
+  
+nav ul ul li {
+    display: flex;
+}
+  
+nav ul ul li a {
+    width: block;
+    color: #333;
+    text-decoration: none;
+}  
+
+p {
+    margin-bottom: 1.3rem;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1 span {
+    color: aqua;
+}
+
+.page-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color:  #07091d;
+    color: #fff;
+    border-radius: .7rem;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    transition: ease-in 0.4s;
+}
+
+.page-button:hover {
+    background-color: aqua;
+    color: #000;
+    font-weight: bold;
+    transition: ease-in 0.4s;
+}
+
+.main img {
+    transition: .6s;
+    width: 20em;
+    border-radius: 50%;
+    margin-left: 4em;
+}
+
+.main img:hover {
+    width: 22em;
+    margin-left: 3em;
+    transition: .6s;
+}
+
+.MySelf-section {
+    background-color: #191c32;
+    margin-top: 1em;
+    
+}
+
+#Projects {
+    border-top-left-radius: 10em;
+    border-bottom-left-radius: 10em;
+}
+
+.title-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    color: #fff;
+    font-style: inherit;
+    font-size: 3em;
+}
+
+.Projects-development {
+    display: flex;
+    justify-items: center;
+    margin-left: 5em;
+    margin-right: 3em;
+}
+
+.MySelf-block {
+    background-color: #666666;
+    border-radius: 2em;
+    color: #fff;
+    transition: transform .5s ease-in-out;
+}
+
+[block="project"] {
+    width: 40em;
+    margin: 3em;
+    margin-right: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MySelf-block img {
+    padding: .1em;
+    width: 20em;
+}
+
+#javaLogoImg {
+    width: 10em;
+}
+
+.MySelf-block button {
+    width: 40%;
+    
+}
+
+.MySelf-block a {    
+    text-decoration: none;
+    text-align: center;
+    color: #fff;  
+    background-color: #07091d;
+    border-radius: .7rem;
+    padding: .6em 1.8em;
+    margin-left: 2em;
+    box-shadow: 1px 3px 11px 2px rgba(102, 231, 200, .69);
+    transition: ease-in 0.4s;  
+}
+
+.MySelf-block a:hover {
+    background-color: aqua;
+    color: #000;
+    font-weight: bold;
+    transition: ease-in 0.4s;
+    cursor: pointer;
+}
+
+.MySelf-block:hover {
+    transform: scale(1.05);
+}
+
+[block="rigth"] {
+    border-top-right-radius: 10em;
+    border-bottom-right-radius: 10em;
+}
+
+[block="left"] {
+    border-top-left-radius: 10em;
+    border-bottom-left-radius: 10em;
+}
+
+.Studys-divs, .Experience-divs {
+    margin-bottom: 2em;
+    padding-bottom: 2.5em;
+}   
+
+[block="mySelf"] {
+    width: 75em;
+    margin: 1em;
+    margin-left: 5em;
+    margin-right: 4em;
+    padding: .7em;
+}
+
+.enlaces-footer {
+    background-color: #191c32;
+    padding: 1.5em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.enlaces-footer .page-button {
+    margin: 1em 3em
+}
+
+[block="abmPython"] {    
+    margin: 3em;
+    margin-right: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.imgProjects {
+    margin: 2.5em;
+    border-radius: 2em;
+    transition: transform .5s ease-in-out;
+}
+  
+.imgProjects:hover {
+    transform: scale(1.05);
+}
+
+#listadoStock {
+    display: flex;
+    justify-content: center;
+}
+
+#listadoStockImg {
+    width: 50em;
+}
+
+.footerClass {
+    margin-top: 2em;
+}
+
+#imgJavaMenuDVD, #imgJavaMenuCD {
+    width: 30em;
+}
+
+.table-knowledge {
+    border-collapse: collapse;
+    width: 60%;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: .5em;
+    text-align: center;
+}
+
+tr:hover {
+    box-shadow: 3px 3px 11px 2px rgba(0, 255, 255, .69);
+}
+
+th {
+    background-color: #333;
+}
+
+td:first-child {
+    width: 30%;
+}
+
+td:last-child {
+    width: 70%;
+}
+
+#block-knowledge {
+    padding-bottom: 1.5em;
+}
+  

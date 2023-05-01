@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/StyleForm.css">
+    <script type="module" src="../Js/form.js" defer></script>
+    <script type="module" src="../Js/validations.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <nav class="navbar" id="Inicio">
+                <div class="brand">
+                    <h2><a href="../index.html">A<span>M</span></a></h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#Projects">Portafolio</a>
+                        <ul>
+                            <li><a href="../Projectos/ABMPython.html">Python</a></li>
+                            <li><a href="../Projectos/ABMJava.html">Java</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#Experience">Experiencia</a></li>
+                    <li><a href="../index.html#Study">Estudios</a></li>
+                    <li><a class="active" href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="info-content">
+                <h1>Formulario de <span>Contacto</span></h1>
+                <form class="form" action="" onsubmit="validateForm(); return false;">
+                    <div>            
+                        <label id="labelName" class="labelStyle" for="fname">Nombre:</label><br>
+                        <input class="input" type="text" id="fname" name="fname" required placeholder="Name" >
+                        <br>                
+                    </div>
+                    <br>
+                    <div>            
+                        <label id="labelLastName" class="labelStyle" for="lname">Apellido:</label><br>
+                        <input class="input" type="text" id="lname" name="lname" required placeholder="Last Name">
+                        <br>            
+                    </div>
+                    <br>
+                    <div>            
+                        <label id="labelMail" class="labelStyle" for="email">Correo:</label><br>
+                        <input class="input" type="email" id="email" name="email" required placeholder="E-mail">
+                        <br>            
+                    </div>
+                    <br>
+                    <div>
+                        <label id="labelMessage" class="labelStyle" for="lmessage">Mensaje:</label><br>
+                        <textarea class="inputMessage" name="lmessage" id="lmessage" cols="30" rows="10" required placeholder="Message"></textarea>
+                    </div>
+                    <br>    
+                    <div class="submitDiv" id="submitDivId">
+                        <input class="submitBtnClass" id="submitButton" type="submit" value="Enviar Consulta">
+                    </div> 
+                </form>
+            </div>
+
+            <div class="confirmHidden" id="confirmMessageID">
+                <p>Su mensaje ha sido enviado correctamente. Muy pronto me contactaré con usted.</p>
+                <p>Muchas gracias!</p>
+                <a class="page-button" href="">Aceptar</a>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footerClass">
+        <div class="enlaces-footer">
+            <a class="page-button" href="#Inicio">Volver arriba</a>
+            <a class="page-button" href="../index.html">Ir al Inicio</a>
+            <a class="page-button" href="https://github.com/AgusMalfatto" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

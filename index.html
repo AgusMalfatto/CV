@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <script type="module" src="Js/form.js" defer></script>
+    <title>Portafolio</title>
+</head>
+<body> 
+    <div class="wrapper">
+
+        <header>
+            <nav class="navbar" id="Inicio">
+                <div class="brand">
+                    <h2><a href="#">A<span>M</span></a></h2>
+                </div>
+                <ul class="menu">
+                    <li><a class="active" href="#">Inicio</a></li>
+                    <li><a href="#Projects">Portafolio</a>
+                        <ul>
+                            <li><a href="Projectos/ABMPython.html">Python</a></li>
+                            <li><a href="Projectos/ABMJava.html">Java</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Experience">Experiencia</a></li>
+                    <li><a href="#Study">Estudios</a></li>
+                    <li><a href="Contacto/index.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="info-content">
+                <h1>Soy <span>Agustin</span> Malfatto</h1>
+                <p>Desarrollador backend de Software. Amplio conocimiento en lenguajes como Python, Java y SQL. Experiencia en desarrollo web y apps de escritorio implementando las ultimas tecnologias del mercado informatico.</p>
+                <a class="page-button" href="https://github.com/AgusMalfatto" target="_blank">Ver Portafolio</a>
+            </div>
+            <img src="images/perfil.png" alt="">
+        </main>
+
+    </div>
+
+    
+    <section class="MySelf-section" id="Projects">
+        <h2 class="title-sections"><strong>Proyectos Profesionales</strong></h2>
+    
+        <div class="Projects-development">
+            <div class="MySelf-block" block="project">
+                <div>
+                    <h3>ABM Python</h3>
+                    <p>Sistema de gestión ABM de productos y ventas. Desarrollo backend de la aplicacion de escritorio en lenguaje Python con conexión a base de datos SQL utilizando la librería SQLite3. </p>
+                    <a id="linkABMPython" href="Projectos/ABMPython.html">Ver mas</a>
+                </div>
+                <img src="Images/PythonImgNueva.png" alt="">
+            </div>
+            
+            <div class="MySelf-block" block="project">
+                <div>
+                    <h3>ABM Java</h3>
+                    <p>Desarrollo frontend y backend de un sistema ABM de gestión de DVDs y CDs. Aplicacion de escritorio desarrollada en Java, con conexion a base de datos SQL con MySQL, y una GUI con TKinter</p>                    
+                    <a href="Projectos/ABMJava.html">Ver mas</a>
+                </div>
+                <img id="javaLogoImg" src="Images/JavaLogoNew.png" alt="">
+            </div>
+        </div>        
+    </section>
+
+    <section class="MySelf-section" id="Experience" block="rigth">
+        <h2 class="title-sections"><strong>Experiencia Profesional</strong></h2>
+
+        <div class="Experience-divs">
+            <div class="MySelf-block" block="mySelf">
+                <h3>PAM Argentina</h3>
+                <p>(2022 - Actual) - Logistica<br>Tareas de logistica en deposito, ingreso de mercaderia al sistema de gestion Open Orange, salidas por sistema, movimientos, preparacion de envios a todo el pais.</p>
+            </div>
+            <div class="MySelf-block" block="mySelf">
+                <h3>Mostaza</h3>
+                <p>(2019 - 2022) - Corredor de Turno<br> Encargado de sector, organizacion de personal de trabajo, division de tareas, realizacion de pedidos en tiempo y forma, mantenimiento del sector de cocina.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="MySelf-section" id="Study" block="left">
+        <h2 class="title-sections"><strong>Estudios</strong></h2>
+
+        <div class="Studys-divs">
+            <div class="MySelf-block" block="mySelf">
+                <h3>Tecnicatura en Programacion de Computadoras</h3>
+                <p>(2022 - Actual) - Universidad de Belgrano<br>Desarrollo backend y frontend. Aprendizaje de Python, Java, JavaScript, SQL, entre otros. Practica de desarrollo de aplicaciones, con sus bases de datos y los testeos de QoS</p>
+            </div>
+            <div class="MySelf-block" block="mySelf">
+                <h3>Bachillerato en Ciencias Naturales</h3>
+                <p>(2012 - 2017)<br> Colegio Sagrado Corazon de Jesus</p>
+            </div>
+            <div class="MySelf-block" block="mySelf" id="block-knowledge">
+                <h3>Conocimientos</h3>
+                <table class="table-knowledge">
+                    <tr>
+                        <th>Tecnologia</th>
+                        <th>Nivel de Conocimiento</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Basico</td>
+                    </tr>
+                </table>
+                <a class="page-button" id="button-knowledge" href="Conocimientos/index.html">Ver Mas</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="enlaces-footer">
+            <a class="page-button" href="#Inicio">Volver arriba</a>
+            <a class="page-button" href="Contacto/index.html">Contacto</a>
+            <a class="page-button" href="https://github.com/AgusMalfatto" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>

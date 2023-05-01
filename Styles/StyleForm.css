@@ -1,0 +1,112 @@
+.input {
+    width: 50em;
+    height: 2em;
+    border: 1px solid #000;
+    padding: .7em;    
+    border-radius: .5rem;
+}
+
+.inputMessage {
+    width: 50em;
+    height: 10em;
+    border: 1px solid #000;
+    padding: .7em;
+    border-radius: .5rem;
+}
+
+.labelStyle {
+    font-size: 1.4rem;
+}
+
+.labelError {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+
+.errorInput {
+    width: 50em;
+    height: 2em;
+    padding: .7em;    
+    border-radius: .5rem;
+    border: 2px solid #ff0000;
+}
+
+
+.errorInputMessage {    
+    width: 50em;
+    height: 10em;
+    border: 2px solid #ff0000;
+    padding: .7em;
+    border-radius: .5rem;
+}
+
+.form {
+    text-align: left;
+}
+
+.submitBtnClass {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color:  #07091d;
+    color: #fff;
+    border-radius: .7rem;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    transition: ease-in 0.1s;
+}
+
+.submitBtnClass:hover {
+    background-color: aqua;
+    color: #000;
+    font-weight: bold;
+    transition: ease-in 0.4s;
+}
+
+.submitBtnClassMoved {    
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color:  #07091d;
+    color: #fff;
+    border-radius: .7rem;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    transition: ease-in 0.1s;
+}
+
+.submitBtnClassMoved:hover {
+    background-color: aqua;
+    color: #000;
+    font-weight: bold;
+    transition: ease-in 0.4s;
+}
+
+.submitDiv {
+    transition: .1s;
+    text-align: left;
+}
+
+.submitMoved {
+    transition: transform 0.1s ease;
+    transform: translateX(50%);
+}
+
+.confirmHidden {
+    display: none;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.confirmMessage {
+    opacity: 1;
+    transition: .5s ease-in-out;
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 1.4em;
+    padding: 1.5em 1em;
+    margin: 2em;
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 3px 11px 2px rgba(0, 255, 255, .69);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header>
+            <nav class="navbar" id="Inicio">
+                <div class="brand">
+                    <h2><a href="../index.html">A<span>M</span></a></h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a class="active" href="#Projects">Portafolio</a>
+                        <ul>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="ABMJava.html">Java</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#Experience">Experiencia</a></li>
+                    <li><a href="../index.html#Study">Estudios</a></li>
+                    <li><a href="../Contacto/index.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="info-content">
+                <h1><span>ABM</span> Supermercado</h1>
+                <p>Desarrollo backend del Software. Sistema de gestion ABM enfocado en el negocio de un supermercado, permitiendo la modificación del stock, y a su vez estableciendo un sistema de venta actualizable, almacenando todo en una base de datos local.</p>
+                <a class="page-button" href="https://github.com/AgusMalfatto/Trabajo_Final" target="_blank">Ver en GitHub</a>
+            </div>
+            <img src="../Images/PythonImgNueva.png" alt="">
+        </main>
+    </div>
+
+    <section class="MySelf-section"  block="left" >
+        <h2 class="title-sections"><strong>Sistema ABM</strong></h2>
+    
+        <div class="Projects-development">
+            <div class="MySelf-block" block="abmPython">
+                <div>
+                    <p>Sistema de gestión ABM de productos y ventas. A traves de un menu de usuario se permite dar de alta ("Agregar Producto"), modificar ("Actualizar Productos") o dar de baja un producto ("Eliminar un Producto") mediante su codigo unico. Se busca realizar cada tarea de una manera simple y sencilla, acompañando al usuario con toda la informacion necesaria buscando evitar los errores que se puedan presentar. </p>
+                </div>
+            </div>
+            <img class="imgProjects" src="../Images/Menu.PNG" alt="">
+        </div>        
+    </section>
+
+    <section class="MySelf-section" block="rigth">
+        <h2 class="title-sections"><strong>Sistema de Ventas</strong></h2>
+    
+        <div class="Projects-development">
+            <img class="imgProjects" src="../Images/Venta.PNG" alt="">
+            <div class="MySelf-block" block="abmPython">
+                <div>
+                    <p>Se añade una funcionalidad que permite realizar ventas a un cliente en especifico ("Generar Venta"), pudiendo elegir varias cantidades de productos diferentes, y validando el stock disponible para no romper el programa. Se almacena la venta en una base de datos, con el cliente correspondiente, y se genera un ticket como simulacion. Ademas permite hacer consulta estadistica para determinar el producto mas vendido segun el tipo de producto ("Articulo mas Vendido"), para obtener informacion precisa que ayuden a la toma de desiciones por parte de la empresa.</p>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="MySelf-section"  block="left" >
+        <h2 class="title-sections"><strong>Ordenes de Ventas</strong></h2>
+    
+        <div class="Projects-development">
+            <div class="MySelf-block" block="abmPython">
+                <div>
+                    <p>Cada venta realizada se almacena con un codigo unico para que el usuario pueda consultar su detalle en el momento que desee ("Consulta Pedidos"). En el nuevo submenu se permite cambiar el estado de un pedido simulando la entrega a domicilio. </p>
+                </div>
+            </div>
+            <img class="imgProjects" src="../Images/OrdenesVenta.PNG" alt="">
+        </div>        
+    </section>
+
+    <section class="MySelf-section" block="rigth">
+        <h2 class="title-sections"><strong>Listados de Stock</strong></h2>
+    
+        <div class="Studys-divs" id="listadoStock">
+            <img class="imgProjects" id="listadoStockImg" src="../Images/ListadosPython.PNG" alt="">
+            <div class="MySelf-block" block="abmPython">
+                <div>
+                    <p>Se permite generar listados de Stock en funcion de lo que usuario necesite en el momento de consultar al sistema ("Listar Productos"). Una vez ingresado, el submenu permite generar listados de productos en stock, o inclusive de los productos vencidos, listando todo en orden creciente por codigo de producto.</p>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <footer>
+        <div class="enlaces-footer">
+            <a class="page-button" href="#Inicio">Volver arriba</a>
+            <a class="page-button" href="../Contacto/index.html">Contacto</a>
+            <a class="page-button" href="https://github.com/AgusMalfatto/Trabajo_Final" target="_blank">Ver en GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>
